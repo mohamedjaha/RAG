@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# RAG runtime artifacts (created at runtime per the PRD)
+uploads/
+chroma_db/
+
+# Node / Vite
+node_modules/
+frontend/dist/

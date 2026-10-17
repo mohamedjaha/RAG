@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #293132;
+  --color-rose: #CD5D67;
+  --color-sand: #D6D5C9;
+  --font-sans: "Josefin Sans", sans-serif;
+}
+
+body {
+  @apply bg-sand text-ink font-sans;
+}

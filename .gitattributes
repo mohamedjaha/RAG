@@ -1,0 +1,8 @@
+# Repository text files keep LF in the index.
+* text=auto
+
+# PDFs must never be line-ending converted: git can mistake a PDF whose
+# header has no NUL bytes for text, and core.autocrlf=true would then corrupt
+# it on commit (verified: lekl101.pdf ballooned 1,443,726 -> 2,907,746 bytes).
+# This rule must stay LAST: later patterns override earlier ones.
+*.pdf binary
